@@ -232,22 +232,22 @@ var slider = multiItemSlider( '.slider', {
     isCycling: true
 } )
 
-// const input = document.querySelector( '.footer-input' );
-// const inputButton = document.querySelector( '.button' );
+const input = document.querySelector( '.footer-input' );
+const inputButton = document.querySelector( '.button' );
 
-// input.addEventListener( 'change', () => {
-//     if( input.value.length > 6 ) {
-//         inputButton.removeAttribute( "disabled" );
-//     } else inputButton.setAttribute( "disabled", true );
+input.addEventListener( 'change', () => {
+    if( input.value.length > 6 ) {
+        inputButton.removeAttribute( "disabled" );
+    } else inputButton.setAttribute( "disabled", true );
 
-// } )
+} )
 
-// inputButton.addEventListener( 'click', ( e ) => {
-//     e.preventDefault();
-//     const user = {
-//         message: `Подписался пользователь с имэйлом ${input.value}`
-//     }
-//     alert( user.message );
-//     input.value = "";
-//     inputButton.setAttribute( "disabled", true );
-// } )
+inputButton.addEventListener( 'click', ( e ) => {
+    e.preventDefault();
+    const user = {
+        message: `Подписался пользователь с имэйлом ${input.value}`
+    }
+    alert( user.message );
+    input.value = "";
+    inputButton.setAttribute( "disabled", true );
+} )
