@@ -6,7 +6,7 @@
 
 html {
   box-sizing: border-box;
-  font-family: font-family-primary;
+  font-family: Montserrat;
 }
 
 .burger-btn > span,
@@ -260,10 +260,13 @@ html {
 }
 
 .slider-button {
+  position: relative;
   padding: 14px;
   margin-top: 86px;
   width: 132px;
   height: 45px;
+  color: white;
+  text-transform: uppercase;
   outline: none;
   border: none;
   box-shadow: 0 2px 12px rgba(227, 10, 23, 0.5);
@@ -272,11 +275,13 @@ html {
 }
 
 .slider-button::after {
+  display: block;
+  width: 150px;
   content: '';
-  display: inline-block;
-  width: 130px;
-  height: 1px;
-  color: #e30a17;
+  position: absolute;
+  border-bottom: 2px solid rgba(255,255,255,.4);
+  top: 50%;
+  left: 150px;
 }
 
 .slider-title {
@@ -338,9 +343,41 @@ html {
 }
 
 .main-wrap-title {
+  position: relative;
   text-transform: uppercase;
   padding-left: 10px;
   margin-top: 2px;
+}
+
+.main-wrap-titl {
+  margin-top: 2px;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+.main-wrap-titl > span {
+  position: relative;
+  color: #e30a17;
+}
+
+.main-wrap-titl > span::after {
+  display: block;
+  width: 180px;
+  content: '';
+  position: absolute;
+  border-bottom: 2px solid rgba(0, 0, 0, .1);
+  top: 50%;
+  right: -192px;
+}
+
+.main-wrap-title::after {
+  display: block;
+  width: 80px;
+  content: '';
+  position: absolute;
+  border-bottom: 2px solid rgba(0, 0, 0, .1);
+  top: 50%;
+  right: -98px;
 }
 
 .heart {
